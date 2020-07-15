@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Name - Main page</title>
     <link rel="stylesheet" href="../Feedback-System/css/index.css">
-    <link rel="icon" href="#">
+    <link rel="icon" href="css\img\college_icon.png">
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
         </div>
         <nav id="nav">
             <ul class="nav-ul">
-                <li class="nav-li"><a href="../Feedback-System/pages/Feedback.html" class="nav-a">Feedback</a></li>
+                <li class="nav-li"><a href="../Feedback-System/pages/Feedback.html" class="nav-a">Anonymous Feedback</a></li>
                 <li class="nav-li"><a href="#" class="nav-a">Events</a></li>
                 <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
                 <?php 
@@ -59,8 +59,8 @@
         <!-- footer design later -->
         <div class="div-contact">
             <ul id="ul-foot">
-                <li class="li-foot"><a href="https://github.com/StealthAdder/Feedback-System" class="a-foot">TeamX Hypertext</a></li>
-                <li class="li-foot" style="float: right;"><a href="https://github.com/StealthAdder" class="a-foot">StealthAdder</a></li>
+                <li class="li-foot"><a href="https://github.com/StealthAdder/Feedback-System" class="a-foot" target="_blank">TeamX Hypertext</a></li>
+                <li class="li-foot" style="float: right;"><a href="https://github.com/StealthAdder" class="a-foot" target="_blank">StealthAdder</a></li>
             </ul>
         </div>
     </footer>
