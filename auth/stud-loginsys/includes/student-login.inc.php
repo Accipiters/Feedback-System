@@ -52,7 +52,7 @@
             $_SESSION['student_username'] = $row['STUDENT_USERNAME'];
             $_SESSION['student_mail'] = $row['STUDENT_MAIL_ID'];
 
-            header("Location: /Feedback-System/index.html?login=Success");
+            header("Location: /Feedback-System/index.php?login=Success");
             exit();
           }
           else {
