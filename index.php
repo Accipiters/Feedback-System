@@ -26,7 +26,7 @@
                 if (isset($_SESSION['student_usn'])) {
                     echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a></li>';
                 } else {
-                    echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/student-login.html" class="nav-a" >Log In</a></li>';
+                    echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/student-login.php" class="nav-a" >Log In</a></li>';
                 }
                 ?>
                 <!-- float Right -->

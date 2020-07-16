@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heading */
+/* icon */
+#college_icon {
+    width: 100px;
+    height: 80px;
+}
+ 
+#title {
+    padding-top: 25px;
+} 
+
+.title-div {
+    display: flex;
+}
+
+/* Nav*/
+
+.nav-ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.nav-li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 20px 12px 20px 12px;
+}
+
+.nav-a {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+}
+
+#page-title {
+    padding: 10px 0px 10px 10px;
+}
+
+/* main */
+
+#form-title-feedback {
+    margin-top: 5px;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.feed-block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.feed-subblock {
+    width: 600px;
+    height: 300px;
+    background-color: darkgray;
+
+}
+
+label {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.feed-content {
+    padding: 25px 10px 10px 10px;
+}
+
+#submit-bt {
+    padding: 10px 5px;
+}
+
+input {
+    padding: 6px 10px;
+}
+
+button {
+    padding: 2.5px 15px;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 5px;
+}
+
+#ul-foot {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:grey;
+}
+
+.li-foot {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 0px 5px 10px;
+}
+
+.a-foot {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-right: 10px;
+
+}
