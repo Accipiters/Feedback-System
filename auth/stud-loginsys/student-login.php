@@ -26,7 +26,7 @@
         <!-- center the content -->
         <!-- <h3 id="page-title">Welcome Student</h3> -->
         <div class="feed-block">
-            <form action="../stud-loginsys/includes/student-login.inc.php" method="post">
+            <form action="../stud-loginsys/includes/student-login.inc.php" method="post" autocomplete="off">
             <div class="feed-subblock">
                 <div>
                     <h3 id="form-title-feedback">Student Login</h3>

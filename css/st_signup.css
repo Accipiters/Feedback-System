@@ -1,8 +1,10 @@
+/* Default */
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* Heading */
 /* icon */
@@ -41,15 +43,11 @@
     font-size: large;
 }
 
-#page-title {
-    padding: 10px 0px 10px 10px;
-}
-
 /* main */
 
 #form-title-feedback {
     margin-top: 5px;
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -62,16 +60,18 @@
 
 .feed-subblock {
     width: 600px;
-    height: 300px;
+    height: 455px;
+    background-color: azure;
 }
 
 label {
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
 }
 
 .feed-content {
-    padding: 25px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+    text-align: justify;
 }
 
 #submit-bt {
@@ -85,6 +85,21 @@ input {
 button {
     padding: 2.5px 15px;
 }
+
+/* Title adjacements */
+
+#sem-title {
+    padding-left: 10px;
+}
+
+#Year-of-Joining {
+    padding-left: 10px;
+}
+
+#usn-title {
+    padding-right: 10px;
+}
+
 
 /* Footer */
 
@@ -110,5 +125,4 @@ footer {
     color: black;
     font-weight: bold;
     padding-right: 10px;
-
 }
