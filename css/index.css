@@ -1,0 +1,90 @@
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heading */
+/* icon */
+#college_icon {
+    width: 100px;
+    height: 80px;
+}
+ 
+#title {
+    padding-top: 25px;
+} 
+
+.title-div {
+    display: flex;
+}
+
+/* Nav*/
+
+.nav-ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.nav-li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 20px 12px 20px 12px;
+}
+
+.nav-a {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+}
+
+/* Main */
+main {
+    padding: 5px 0px 25px 8px;
+}
+
+.div-main {
+    padding: 15px 15px 0px 15px;
+    max-width: 450px;
+    display: inline-block;
+}
+
+#h3-updates {
+    padding-top: 20px;
+}
+
+.feed {
+    padding-top: 5px;
+    padding-left: 10px;
+    max-width: 800px;
+}
+
+/* Footer */
+footer {
+    padding-top: 5px;
+}
+
+#ul-foot {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:grey;
+}
+
+.li-foot {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 0px 5px 10px;
+}
+
+.a-foot {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-right: 10px;
+
+}

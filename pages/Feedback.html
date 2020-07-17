@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="icon" href="../css/img/college_icon.png">
+    <link rel="stylesheet" href="../css/a_fb.css">
+</head>
+<body>
+    <header>
+        <div class="title-div">
+            <a href="../Feedback-System/index.html"><img src="../css/img/college_icon.png" alt="Logo" id="college_icon"></a>
+            <h1 id="title">College Name</h1>
+        </div>
+        <nav class="">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="../index.php" class="nav-a">Home</a></li>
+                <li class="nav-li"><a href="#" class="nav-a">Events</a></li>
+                <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
+                <!-- <li class="nav-li" style="float: right;"><a href="#" class="nav-a">logout</a></li> -->
+                <!-- float Right -->
+            </ul>
+        </nav>
+        <h2 id="page-title">Anonymous Feedback Page - College Name</h2>
+    </header>
+    <main>
+        <!-- form inputs improvise  -->
+        <!-- enable some kinda of auth to access form later -->
+        <form action="#" method="post" autocomplete="off">
+            <!-- basics -->
+            <div class="feed-block">
+                <div class="feed-subblock">
+                    <h3 id="form-title-feedback">Form - Feedback</h3>
+                    <div class="feed-content">
+                        <label for="dept" style="padding-right: 25px;">Department</label>
+                        <label for="sem" style="padding-left: 10px;">Semester</label>
+                    </div>
+                    <div>
+                        <Select name="dept" style="margin-right: 30px;">
+                            <option value="" disabled selected>Choose Dept</option>
+                            <option value="cse">CSE</option>
+                            <option value="">ECE</option>
+                        </Select>
+                        <select name="sem" style="margin-left: 25px;">
+                            <option value="" disabled selected>Choose Sem</option>
+                            <option value="I SEM">I SEM</option>
+                            <option value="II SEM">II SEM</option>
+                            <option value="III SEM">III SEM</option>
+                            <option value="IV SEM">IV SEM</option>
+                            <option value="V SEM">V SEM</option>
+                            <option value="VI SEM">VI SEM</option>
+                            <option value="VII SEM">VII SEM</option>
+                            <option value="VIII SEM">VIII SEM</option>
+                        </select>
+                    </div>
+                    <div class="feed-content">
+                        <label for="">Feedback</label>
+                    </div>
+                    <div>
+                        <textarea name="msg" cols="50" rows="8"></textarea>
+                    </div>
+                    <div id="submit-bt">
+                        <button type="submit" name="feedback-submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <!-- footer design later -->
+        <div class="div-contact">
+            <ul id="ul-foot">
+                <li class="li-foot"><a href="https://github.com/StealthAdder/Feedback-System" class="a-foot" target="_blank">TeamX Hypertext</a></li>
+                <li class="li-foot" style="float: right;"><a href="https://github.com/StealthAdder" class="a-foot" target="_blank">StealthAdder</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
