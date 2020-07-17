@@ -18,7 +18,14 @@
         </div>
         <nav id="nav">
             <ul class="nav-ul">
-                <li class="nav-li"><a href="../Feedback-System/pages/Feedback.html" class="nav-a">Anonymous Feedback</a></li>
+                <?php
+                if (isset($_SESSION['student_usn'])) {
+                    echo '<li class="nav-li"><a href="../Feedback-System/pages/varFeed.html" class="nav-a">Feedback Form</a></li>';
+                }
+                else {
+                    echo '<li class="nav-li"><a href="../Feedback-System/pages/Feedback.html" class="nav-a">Anonymous Feedback</a></li>';
+                }
+                ?>
                 <li class="nav-li"><a href="#" class="nav-a">Events</a></li>
                 <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
                 <?php 

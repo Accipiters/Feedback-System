@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login</title>
     <link rel="stylesheet" href="/Feedback-System/css/st_login.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="/Feedback-System/css/img/college_icon.png">
 </head>
 <body>
     <header>
