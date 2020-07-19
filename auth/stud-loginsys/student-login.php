@@ -17,7 +17,7 @@
             <ul class="nav-ul">
                 <li class="nav-li"><a href="/Feedback-System/index.php" class="nav-a">Home</a></li>
                 <li class="nav-li"><a href="" class="nav-a">News</a></li>
-                <li class="nav-li" style="float: right;"><a href="../stud-loginsys/student-signup.html" class="nav-a">Sign Up</a></li>
+                <li class="nav-li" style="float: right;"><a href="../stud-loginsys/student-signup.php" class="nav-a">Sign Up</a></li>
                 <!-- Signup float right -->
             </ul>
         </nav>
@@ -32,10 +32,10 @@
                     <h3 id="form-title-feedback">Student Login</h3>
                 </div>      
                 <div class="feed-content">
-                    <input type="text" placeholder="USN/Username/Mail ID" name="usn">
+                    <input type="text" placeholder="USN/Username/Mail ID" name="usn" required>
                 </div>
                 <div class="feed-content">
-                    <input type="password" placeholder="Password" name="pwd">
+                    <input type="password" placeholder="Password" name="pwd" required>
                 </div>
                 <div class="feed-content">
                     <button type="submit" name="login-sumbit">Log In</button>

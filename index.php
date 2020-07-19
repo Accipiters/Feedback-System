@@ -20,7 +20,7 @@
             <ul class="nav-ul">
                 <?php
                 if (isset($_SESSION['student_usn'])) {
-                    echo '<li class="nav-li"><a href="../Feedback-System/pages/varFeed.html" class="nav-a">Feedback Form</a></li>';
+                    echo '<li class="nav-li"><a href="../Feedback-System/pages/varFeed.php" class="nav-a">Feedback Form</a></li>';
                 }
                 else {
                     echo '<li class="nav-li"><a href="../Feedback-System/pages/Feedback.html" class="nav-a">Anonymous Feedback</a></li>';
@@ -28,10 +28,11 @@
                 ?>
                 <li class="nav-li"><a href="#" class="nav-a">Events</a></li>
                 <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
-                <?php 
-                
+                <?php
                 if (isset($_SESSION['student_usn'])) {
+                    // $name = $_SESSION['student_name'];
                     echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a></li>';
+                    echo  '<li class="nav-li" style="float: right"><a href="#" class="nav-a">'.$_SESSION['student_name'].'</a></li>';
                 } else {
                     echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/student-login.php" class="nav-a" >Log In</a></li>';
                 }
