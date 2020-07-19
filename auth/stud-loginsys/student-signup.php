@@ -64,7 +64,6 @@
                                 }
                                 else if ($_GET['error'] == "accessdenied") {
                                     echo '<p class="error">User reported with Session ID - Code Protected!</p>';
-                                    echo '<p></p>';
                                 }
                             } 
                             else if ($_GET['Signup']) {

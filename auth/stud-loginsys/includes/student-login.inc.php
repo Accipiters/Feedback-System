@@ -8,7 +8,7 @@
     $conn = mysqli_connect($hostname, $dbusername, $dbpassword, 'FEEDBACK_SYS');
 
     if (mysqli_connect_error()) {
-      header("Location: /Feedback-System/auth/stud-loginsys/student-login.html?error=sqlconnectionerror");
+      header("Location: /Feedback-System/auth/stud-loginsys/student-login.php?error=sqlconnectionerror");
       exit();
     }
 
@@ -17,7 +17,7 @@
 
     // E1 - CHECK EMPTY FIELDS
     if (empty($username) || empty($pwd)) {
-      header("Location: /Feedback-System/auth/stud-loginsys/student-login.html?error=emptyfields");
+      header("Location: /Feedback-System/auth/stud-loginsys/student-login.php?error=emptyfields");
       exit();
     }
     // Check if user exists
@@ -27,7 +27,7 @@
       $stmt = mysqli_stmt_init($conn);
       // check sql
       if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("Location: /Feedback-System/auth/stud-loginsys/student-login.html?error=sqlerror0");
+        header("Location: /Feedback-System/auth/stud-loginsys/student-login.php?error=sqlerror0");
         exit();
       }
       else {
@@ -42,7 +42,7 @@
           $pwdCheck = password_verify($pwd, $row['STUDENT_PASSWORD']);
           
           if ($pwdCheck == false) {
-            header("Location: /Feedback-System/auth/stud-loginsys/student-login.html?error=wrongpwd0");
+            header("Location: /Feedback-System/auth/stud-loginsys/student-login.php?error=wrongpwd0");
             exit();
           }
           else if ($pwdCheck == true) {
@@ -56,12 +56,12 @@
             exit();
           }
           else {
-            header("Location: /Feedback-System/auth/stud-loginsys/student-login.html?error=wrongpwd1");
+            header("Location: /Feedback-System/auth/stud-loginsys/student-login.php?error=wrongpwd1");
             exit();
           }
         } 
         else {
-          header("Location: /Feedback-System/auth/stud-loginsys/student-login.html?error=nouser");
+          header("Location: /Feedback-System/auth/stud-loginsys/student-login.php?error=nouser");
           exit();
         }
       }
@@ -70,6 +70,6 @@
     mysqli_close($conn);
   }
   else {
-    header("Location: /Feedback-System/auth/stud-loginsys/student-login.html?error=accessdenied");
+    header("Location: /Feedback-System/auth/stud-loginsys/student-login.php?error=accessdenied");
     exit();
   }

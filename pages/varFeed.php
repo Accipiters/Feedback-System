@@ -1,5 +1,9 @@
 <?php 
     session_start();
+    if (!isset($_SESSION['student_usn'])) {
+        header("Location: /Feedback-System/auth/stud-loginsys/student-login.php?error=accessdenied");
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
