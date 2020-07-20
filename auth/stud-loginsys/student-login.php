@@ -17,7 +17,7 @@
             <ul class="nav-ul">
                 <li class="nav-li"><a href="/Feedback-System/index.php" class="nav-a">Home</a></li>
                 <li class="nav-li"><a href="" class="nav-a">News</a></li>
-                <li class="nav-li" style="float: right;"><a href="../stud-loginsys/student-signup.html" class="nav-a">Sign Up</a></li>
+                <li class="nav-li" style="float: right;"><a href="../stud-loginsys/student-signup.php" class="nav-a">Sign Up</a></li>
                 <!-- Signup float right -->
             </ul>
         </nav>
@@ -30,12 +30,41 @@
             <div class="feed-subblock">
                 <div>
                     <h3 id="form-title-feedback">Student Login</h3>
-                </div>      
-                <div class="feed-content">
-                    <input type="text" placeholder="USN/Username/Mail ID" name="usn">
+                </div>
+                <div>
+                    <?php
+                        if (isset($_GET['error'])) {
+                            if ($_GET['error'] == "accessdenied") {
+                                echo '<p class="error">Access Denied!</p>';
+                            }
+                            elseif ($_GET['error'] == "sqlconnectionerror") {
+                                echo '<p class="error">ERROR CODE: SQL_CON_ERR </p><span>Contact: </span><a href="/Feedback-System/pages/Tech_Support.html" class="ts">TeamX Support</a>';
+                                // Future update to transfer to pg with delay and might even care the error code witht the transfer...
+                            }
+                            elseif ($_GET['error'] == "emptyfields") {
+                                echo '<p class="error">Fill in all fields</p>';
+                            } 
+                            else if ($_GET['error'] == "sqlerror0") {
+                                echo '<p class="error">ERROR CODE: SQL0 </p><span>Contact: </span><a href="/Feedback-System/pages/Tech_Support.html" class="ts">TeamX Support</a>';
+                            }
+                            elseif ($_GET['error'] == "wrongpwd0") {
+                                echo '<p class="error">Wrong Password!</p>';
+                            }
+                            else if ($_GET['error'] == "wrongpwd1") {
+                                echo '<p class="error">ERROR CODE: WRNG_PWD_1 </p><span>Contact: </span><a href="#" class="ts">TeamX Support</a>';
+                                // need some work here
+                            }
+                            elseif ($_GET['error'] == "nouser") {
+                                echo '<p class="error">User Doesn`t exist!</p>';
+                            }
+                        }
+                    ?>
                 </div>
                 <div class="feed-content">
-                    <input type="password" placeholder="Password" name="pwd">
+                    <input type="text" placeholder="USN/Username/Mail ID" name="usn" required>
+                </div>
+                <div class="feed-content">
+                    <input type="password" placeholder="Password" name="pwd" required>
                 </div>
                 <div class="feed-content">
                     <button type="submit" name="login-sumbit">Log In</button>

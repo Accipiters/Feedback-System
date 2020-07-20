@@ -48,7 +48,7 @@
 #form-title-feedback {
     margin-top: 5px;
     font-size: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -62,7 +62,9 @@
     width: 600px;
     height: 455px;
     background-color: azure;
+    margin-bottom: 8px;
 }
+
 
 label {
     font-size: large;
@@ -70,7 +72,7 @@ label {
 }
 
 .feed-content {
-    padding: 20px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     text-align: justify;
 }
 
@@ -84,6 +86,8 @@ input {
 
 button {
     padding: 2.5px 15px;
+    margin-top: 8px;
+    margin-bottom: 5px;
 }
 
 /* Title adjacements */
@@ -102,11 +106,6 @@ button {
 
 
 /* Footer */
-
-footer {
-    padding-top: 5px;
-}
-
 #ul-foot {
     list-style-type: none;
     overflow: hidden;
@@ -125,4 +124,16 @@ footer {
     color: black;
     font-weight: bold;
     padding-right: 10px;
+}
+
+/* url handlers */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+
+.success {
+    color: green;
+    font-weight: bold;
 }

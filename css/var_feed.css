@@ -1,0 +1,153 @@
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Heading */
+/* icon */
+#college_icon {
+    width: 100px;
+    height: 80px;
+}
+ 
+#title {
+    padding-top: 25px;
+} 
+
+.title-div {
+    display: flex;
+}
+
+/* Nav*/
+
+.nav-ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.nav-li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 20px 12px 20px 12px;
+}
+
+.nav-a {
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+
+/* Footer */
+
+footer {
+    padding-top: 5px;
+}
+
+#ul-foot {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:grey;
+}
+
+.li-foot {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 0px 5px 10px;
+}
+
+.a-foot {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* Form required */
+.required {
+    color: red;
+}
+
+/* testing */
+.subjects {
+    text-align: left;
+    padding: 5px 10px 10px 0px;
+
+}
+
+.percent {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+p {
+    text-align: left;
+}
+.block-td-center {
+    text-align: center;
+}
+
+.block-td-left {
+    text-align: left;
+    padding-left: 5px;
+} 
+
+.teachers {
+    text-align: left;
+    padding: 5px 10px 10px 0px;
+    max-width: 144px;
+}
+
+/* block content center css */
+.block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(229, 234, 238);
+}
+
+.sub-block {
+    margin: 5px 5px 5px 5px;
+    width: 600px;
+}
+
+.sblock-content {
+    margin: 8px 5px 8px 5px;
+    padding: 10px 10px 15px 10px;
+    background-color: white;
+    border-radius: 6px;
+    border-style: none;
+}
+
+p {
+    padding: 10px 10px 10px 5px;
+    font-size: large;
+    font-weight: 600;
+}
+
+#select-left {
+    display: flex;
+    margin-left: 5px;
+}
+button {
+    display: flex;
+    /* width: 60px;
+    height: 30px; */
+    margin-left: 15px;
+    /* padding: 8px 8px; */
+    padding: 8px 20px 8px 20px;
+    border-radius: 2.5px;
+    border-style: none;
+    background-color: slateblue;
+    color: white;
+    font-weight: bold;
+}

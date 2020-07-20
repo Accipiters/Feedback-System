@@ -28,28 +28,28 @@ if (isset($_POST['signup-submit'])) {
     // CHECKING CHECKING ALL THE MISTAKES
     //E1 - EMPTY FIELDS
     if (empty($student_name) || empty($usn) || empty($dept) || empty($dept) || empty($sem) || empty($yearofjoin) || empty($mail) || empty($username) || empty($password) || empty($passwordCheck)) {
-        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=emptyfields");
+        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=emptyfields");
         exit();
     }
     // E2 - VALIDATING MAIL ID && username
     else if (!filter_var($mail, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/",$username)) {
-        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=invalidusernamemailid");
+        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=invalidusernamemailid");
         exit();
     }
     // E3 - mail VALIDATION
     else if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=invalidusername&mailid=".$mail);
+        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=invalidmail&mailid=".$username);
         exit();
     }
     // E4 - username VALIDATION
     else if (!preg_match("/^[a-zA-Z0-9]*$/",$username)) {
-        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=invalidusername&mailid=".$mail);
+        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=invalidusername&mailid=".$mail);
         exit();
     }
 
     // E5 - password mismatch
     else if ($password !== $passwordCheck) {
-        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=checkpasswd");
+        header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=checkpasswd");
         exit();
     }
     // E6 - CHECK IF USERNAME IS ALREADY TAKEN
@@ -60,7 +60,7 @@ if (isset($_POST['signup-submit'])) {
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=sqlerror0");
+            header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=sqlerror0");
             exit();
         }
         else {
@@ -72,7 +72,7 @@ if (isset($_POST['signup-submit'])) {
 
             if ($resultCheck > 0) {
                 // username exists
-                header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=userexists");
+                header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=userexists");
                 exit();
             }
             else {
@@ -82,7 +82,7 @@ if (isset($_POST['signup-submit'])) {
                 $stmt = mysqli_stmt_init($conn);
 
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
-                    header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=sqlerror1");
+                    header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=sqlerror1");
                     exit();
                 }
                 else {
@@ -94,7 +94,7 @@ if (isset($_POST['signup-submit'])) {
                     mysqli_stmt_store_result($stmt);
 
 
-                    header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?Signup=Success");
+                    header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?Signup=Success");
                     exit();
                 }
             }
@@ -106,6 +106,6 @@ if (isset($_POST['signup-submit'])) {
 }
 else {
     // url force enter error message
-    header("Location: /Feedback-System/auth/stud-loginsys/student-signup.html?error=accessdeined");
+    header("Location: /Feedback-System/auth/stud-loginsys/student-signup.php?error=accessdenied");
     exit();
 }
