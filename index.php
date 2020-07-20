@@ -30,19 +30,18 @@
                 <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
                 <?php
                 if (isset($_SESSION['student_usn'])) {
-                    // $name = $_SESSION['student_name'];
                     echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a></li>';
                     echo  '<li class="nav-li" style="float: right"><a href="#" class="nav-a">'.$_SESSION['student_name'].'</a></li>';
                 } else {
                     echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/student-login.php" class="nav-a" >Log In</a></li>';
                 }
                 ?>
-                <!-- float Right -->
             </ul>
         </nav>
     </header>
     <main>
         <!-- background feature with some cool slides -->
+        <!-- Feature Update -->
         <h3 id="h3-main">Welcome to main page</h3>
         <div class="div-main">
             <h5>News</h5>
@@ -64,7 +63,6 @@
         </div>
     </main>
     <footer>
-        <!-- footer design later -->
         <div class="div-contact">
             <ul id="ul-foot">
                 <li class="li-foot"><a href="https://github.com/StealthAdder/Feedback-System" class="a-foot" target="_blank">TeamX Hypertext</a></li>

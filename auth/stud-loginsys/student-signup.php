@@ -100,7 +100,7 @@
                             <option value="VII">VII SEM</option>
                             <option value="VIII">VIII SEM</option>
                         </select>
-                        <label for="" id="Year-of-Joining">Year</label>
+                        <label for="" id="Year-of-Joining">Year of Joining</label>
                         <select name="yoj" id="">
                             <option value="" selected disabled>Select</option>
                             <option value="2020">2020</option>
