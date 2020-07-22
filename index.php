@@ -16,28 +16,31 @@
             <a href="../Feedback-System/index.html"><img src="../Feedback-System/css/img/college_icon.png" alt="Logo" id="college_icon"></a>
             <h1 id="title">College Name</h1>
         </div>
-        <nav id="nav">
-            <ul class="nav-ul">
-                <?php
+        <div class="navbar">
+            <?php
                 if (isset($_SESSION['student_usn'])) {
-                    echo '<li class="nav-li"><a href="../Feedback-System/pages/varFeed.php" class="nav-a">Feedback Form</a></li>';
+                    echo '<a href="../Feedback-System/pages/varFeed.php" class="nav-a">Feedback Form</a>';
                 }
                 else {
-                    echo '<li class="nav-li"><a href="../Feedback-System/pages/Feedback.html" class="nav-a">Anonymous Feedback</a></li>';
+                    echo '<a href="../Feedback-System/pages/Feedback.php" class="nav-a">Anonymous Feedback</a>';
                 }
-                ?>
-                <li class="nav-li"><a href="#" class="nav-a">Events</a></li>
-                <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
-                <?php
-                if (isset($_SESSION['student_usn'])) {
-                    echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a></li>';
-                    echo  '<li class="nav-li" style="float: right"><a href="#" class="nav-a">'.$_SESSION['student_name'].'</a></li>';
-                } else {
-                    echo '<li class="nav-li" style="float: right"><a href="../Feedback-System/auth/stud-loginsys/student-login.php" class="nav-a" >Log In</a></li>';
-                }
-                ?>
-            </ul>
-        </nav>
+            ?>
+            <?php if (isset($_SESSION['student_usn'])) { ?>
+                <div class="dropdown" style="float:right;">
+                    <button class="dropbtn" style="font-weight: bold;"><?php echo $_SESSION['student_name'];?></button>
+                <div class="dropdown-content">
+                    <a href="../Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a>
+                </div>
+                </div>
+            <?php } else { ?>
+                <a href="../Feedback-System/auth/stud-loginsys/student-login.php" class="nav-a" style="float: right; margin-right: 15px">Log In</a>
+            <?php } ?>
+            <!-- <div class="dropdown" style="float:right;">
+                <button class="dropbtn">Username</button>
+            <div class="dropdown-content">
+                <a href="../Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a>
+            </div> -->
+        </div>
     </header>
     <main>
         <!-- background feature with some cool slides -->

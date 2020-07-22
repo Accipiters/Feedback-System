@@ -13,26 +13,35 @@
             <a href="../Feedback-System/index.html"><img src="../css/img/college_icon.png" alt="Logo" id="college_icon"></a>
             <h1 id="title">College Name</h1>
         </div>
-        <nav class="">
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="../index.php" class="nav-a">Home</a></li>
-                <li class="nav-li"><a href="#" class="nav-a">Events</a></li>
-                <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
-                <!-- <li class="nav-li" style="float: right;"><a href="#" class="nav-a">logout</a></li> -->
-                <!-- float Right -->
-            </ul>
-        </nav>
+        <div class="navbar">
+            <a href="../index.php" class="nav-a">Home</a>
+            <a href="#" class="nav-a">Events</a>
+            <a href="#" class="nav-a">Extras</a>
+        </div>
     </header>
     <main>
         <!-- form inputs improvise  -->
         <!-- enable some kinda of auth to access form later -->
         <!-- DB Pending -->
-        <form action="#" method="post" autocomplete="off">
+        <form action="../db/anonymous/afb.inc.php" method="post" autocomplete="off">
             <!-- basics -->
             <div class="feed-block">
                 <div class="feed-subblock">
                     <!-- <h3 id="form-title-feedback">Form - Feedback</h3> -->
                     <h2 id="page-title">Anonymous Feedback Page</h2>
+                    <?php
+
+                        if (isset($_GET['error'])) {
+                            if ($_GET['error'] == "emptyfields") {
+                                echo '<p class="error">Fill in all the fields</p>';
+                            }
+                        }
+                        else if ($_GET['info'] == "sent") {
+                            echo '<p class="error">We have got your feedback!</p>';
+                            echo '<p class="">Thanks - TeamX Hypertext</p>';
+                        }
+
+                    ?>
                     <div class="feed-content">
                         <label for="dept" style="margin-right:50px;">Department</label>
                         <label for="sem" style="margin-right:15px; margin-left:20px;">Semester</label>
@@ -40,8 +49,8 @@
                     <div>
                         <Select name="dept" style="margin-right: 30px;">
                             <option value="" disabled selected>Choose Dept</option>
-                            <option value="cse">CSE</option>
-                            <option value="">ECE</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
                         </Select>
                         <select name="sem" style="margin-left: 35px;">
                             <option value="" disabled selected>Choose Sem</option>

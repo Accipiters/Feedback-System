@@ -21,15 +21,19 @@
             <a href="/Feedback-System/index.php"><img src="/Feedback-System/css/img/college_icon.png" alt="Logo" id="college_icon"></a>
             <h1 id="title">College Name</h1>
         </div>
-        <nav id="nav">
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="/Feedback-System/index.php" class="nav-a">Home</a></li>
-                <li class="nav-li"><a href="#" class="nav-a">Events</a></li>
-                <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
-                <li class="nav-li" style="float: right"><a href="/Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a></li>
-                <!-- float Right -->
-            </ul>
-        </nav>
+        <div class="navbar">
+            <a href="/Feedback-System/index.php" class="nav-a">Home</a>
+            <a href="#" class="nav-a">Events</a>
+            <a href="#" class="nav-a">Extras</a>
+            <?php if (isset($_SESSION['student_usn'])) { ?>
+                <div class="dropdown" style="float:right;">
+                    <button class="dropbtn" style="font-weight: bold;"><?php echo $_SESSION['student_name'];?></button>
+                    <div class="dropdown-content">
+                        <a href="../Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
     </header>
     <main>
         <!-- main content -->

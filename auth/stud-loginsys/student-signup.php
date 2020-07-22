@@ -13,15 +13,12 @@
             <a href="/Feedback-System/index.php"><img src="/Feedback-System/css/img/college_icon.png" alt="Logo" id="college_icon"></a>
             <h1 id="title">College Name</h1>
         </div>
-        <nav id="nav">
-            <ul class="nav-ul">
-                <li class="nav-li"><a href="/Feedback-System/index.php" class="nav-a">Home</a></li>
-                <li class="nav-li"><a href="/Feedback-System/pages/Feedback.html" class="nav-a">Anonymous Feedback</a></li>
-                <li class="nav-li"><a href="#" class="nav-a">Events</a></li>
-                <li class="nav-li"><a href="#" class="nav-a">Extras</a></li>
-                <!-- float Right -->
-            </ul>
-        </nav>
+        <div class="navbar">
+            <a href="/Feedback-System/index.php" class="nav-a">Home</a>
+            <a href="/Feedback-System/pages/Feedback.php" class="nav-a">Anonymous Feedback</a>
+            <a href="#" class="nav-a">Events</a>
+            <a href="#" class="nav-a">Extras</a>
+        </div>
     </header>
     <main>
         <h3></h3>
