@@ -26,7 +26,8 @@
             <div class="feed-subblock">
                 <form action="../stud-loginsys/includes/student-signup.inc.php" method="post" autocomplete="off">
                     <div>
-                        <h3 id="form-title-feedback">Student Sign Up form</h3>
+                        <img src="/Feedback-System/css/img/student_icon.jpg" alt="User Icon" id="login-icon">
+                        <h3>Student Sign Up</h3>
                     </div>
                     <div>
                         <?php 
@@ -70,24 +71,22 @@
                         ?>
                     </div>
                     <div class="feed-content">
-                        <label for="" id="name-title">Name</label>
                         <input type="text" name="sname-f" placeholder="Firstname" required>
+                    </div>
+                    <div class="feed-content">
                         <input type="text" name="sname-l" placeholder="Lastname" required>
                     </div>
                     <div class="feed-content">
-                        <label for="" id="usn-title">USN</label>
                         <input type="text" name="usn" placeholder="1RGYYBRNUM" required>
                     </div>
                     <div class="feed-content">
-                        <label for="" id="branch-title">Branch</label>
                         <select name="dept" id="">
-                            <option value="" disabled selected>Select</option>
+                            <option value="" disabled selected>Department</option>
                             <option value="CSE">CSE</option>
                             <option value="ECE">ECE</option>
                         </select>
-                        <label for="" id="sem-title">Semester</label>
                         <select name="sem" id="">
-                            <option value="" disabled selected>Select</option>
+                            <option value="" disabled selected>Semester</option>
                             <option value="I">I SEM</option>
                             <option value="II">II SEM</option>
                             <option value="III">III SEM</option>
@@ -97,9 +96,8 @@
                             <option value="VII">VII SEM</option>
                             <option value="VIII">VIII SEM</option>
                         </select>
-                        <label for="" id="Year-of-Joining">Year of Joining</label>
                         <select name="yoj" id="">
-                            <option value="" selected disabled>Select</option>
+                            <option value="" selected disabled>Batch</option>
                             <option value="2020">2020</option>
                             <option value="2019">2019</option>
                             <option value="2018">2018</option>
@@ -111,16 +109,15 @@
                         </select>
                     </div>
                     <div class="feed-content">
-                        <label for="">Username</label>
                         <input type="text" name="username" placeholder="Username" required>
                     </div>
                     <div class="feed-content">
-                        <label for="" id="mail-title">E-mail Address</label>
                         <input type="text" name="mail" placeholder="Mail ID" required>
                     </div>
                     <div class="feed-content">
-                        <label for="password-title">Passsword</label>
                         <input type="password" name="pwd" placeholder="Password" required>
+                    </div>
+                    <div class="feed-content">
                         <input type="password" name="pwd-repeat" placeholder="Repeat-Password" required>
                     </div>
                     <button type="submit" name="signup-submit">Sign Up</button>
@@ -129,7 +126,6 @@
         </div>
     </main>
     <footer>
-        <!-- footer -->
         <div class="div-contact">
             <ul id="ul-foot">
                 <li class="li-foot"><a href="https://github.com/StealthAdder/Feedback-System" class="a-foot" target="_blank">TeamX Hypertext</a></li>

@@ -54,37 +54,59 @@
     font-size: 50px;
 }
 
+#afb-icon {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+}
+
 .feed-block {
     display: flex;
     text-align: center;
     justify-content: center;
+    margin: 5px 5px;
 }
 
 .feed-subblock {
-    margin-top: 15px;
-    width: 800px;
-    height: 400px;
+    padding: 5px 15px;
+    width: 500px;
+    margin: 5px 5px;
+    border-radius: 15px;
     /* background-color: darkgray; */
-
-}
-
-label {
-    font-size: large;
-    font-weight: bold;
 }
 
 .feed-content {
-    padding: 15px 10px 15px 10px;
+    margin: 10px 5px;
 }
 
-#submit-bt {
-    padding: 10px 5px;
+select {
+    padding: 3px 1px;
+    margin: 2px 2px;
+    font-weight: bold;
+}
+
+textarea {
+    /* padding: 10px 15px; */
+    font-size: medium;
+    width: 100%;
+    height: 160px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
 }
 
 button {
-    padding: 2.5px 15px;
+    background-color: #3498DB;
+    color: white;
+    padding: 5px 20px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
 }
-
 
 /* Footer */
 footer {

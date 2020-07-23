@@ -20,15 +20,12 @@
         </div>
     </header>
     <main>
-        <!-- form inputs improvise  -->
-        <!-- enable some kinda of auth to access form later -->
-        <!-- DB Pending -->
         <form action="../db/anonymous/afb.inc.php" method="post" autocomplete="off">
             <!-- basics -->
             <div class="feed-block">
                 <div class="feed-subblock">
-                    <!-- <h3 id="form-title-feedback">Form - Feedback</h3> -->
-                    <h2 id="page-title">Anonymous Feedback Page</h2>
+                    <img src="/Feedback-System/css/img/anonymous_icon.jpg" alt="Feeback Icon" id="afb-icon">
+                    <h3>Anonymous Feedback</h3>
                     <?php
 
                         if (isset($_GET['error'])) {
@@ -40,20 +37,15 @@
                             echo '<p class="error">We have got your feedback!</p>';
                             echo '<p class="">Thanks - TeamX Hypertext</p>';
                         }
-
                     ?>
                     <div class="feed-content">
-                        <label for="dept" style="margin-right:50px;">Department</label>
-                        <label for="sem" style="margin-right:15px; margin-left:20px;">Semester</label>
-                    </div>
-                    <div>
                         <Select name="dept" style="margin-right: 30px;">
-                            <option value="" disabled selected>Choose Dept</option>
+                            <option value="" disabled selected>Department</option>
                             <option value="CSE">CSE</option>
                             <option value="ECE">ECE</option>
                         </Select>
                         <select name="sem" style="margin-left: 35px;">
-                            <option value="" disabled selected>Choose Sem</option>
+                            <option value="" disabled selected>Semester</option>
                             <option value="I SEM">I SEM</option>
                             <option value="II SEM">II SEM</option>
                             <option value="III SEM">III SEM</option>
@@ -64,11 +56,8 @@
                             <option value="VIII SEM">VIII SEM</option>
                         </select>
                     </div>
-                    <div class="feed-content" style="margin-top: 10px;">
-                        <label for="">Feedback</label>
-                    </div>
-                    <div>
-                        <textarea name="msg" cols="50" rows="8"></textarea>
+                    <div class="feed-content">
+                        <textarea name="msg" cols="50" rows="8" placeholder="Write your feedback"></textarea>
                     </div>
                     <div id="submit-bt">
                         <button type="submit" name="feedback-submit">Submit</button>

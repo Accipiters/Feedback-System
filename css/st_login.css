@@ -56,6 +56,13 @@
     padding-bottom: 10px;
 }
 
+#login-icon {
+    margin-top: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+}
+
 .feed-block {
     display: flex;
     text-align: center;
@@ -63,9 +70,8 @@
 }
 
 .feed-subblock {
-    width: 600px;
-    height: 300px;
-    padding-bottom: 10px;
+    min-width: 600px;
+    margin: 10px 10px;
 }
 
 label {
@@ -74,7 +80,7 @@ label {
 }
 
 .feed-content {
-    padding: 20px 10px 10px 10px;
+    margin: 16px 14px;
 }
 
 #submit-bt {
@@ -82,12 +88,24 @@ label {
 }
 
 input {
-    padding: 6px 10px;
+    width: 40%;
+    padding: 12px 16px;
+    border: none;
+    font-size: medium;
+    border-radius: 0;
+    border-bottom: 3px solid #3498DB;
 }
 
 button {
-    padding: 2.5px 15px;
+    background-color: #3498DB;
+    color: white;
+    padding: 5px 20px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
 }
+
 
 /* Footer */
 

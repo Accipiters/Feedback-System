@@ -29,7 +29,7 @@
                 <div class="dropdown" style="float:right;">
                     <button class="dropbtn" style="font-weight: bold;"><?php echo $_SESSION['student_name'];?></button>
                     <div class="dropdown-content">
-                        <a href="../Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a>
+                        <a href="/Feedback-System/auth/stud-loginsys/includes/logout.php" class="nav-a">Log Out</a>
                     </div>
                 </div>
             <?php } ?>
@@ -39,7 +39,8 @@
         <!-- main content -->
         <div class="block">            
             <div class="sub-block">
-            <h2>Scheduled Feedback</h2>
+                <img src="/Feedback-System/css/img/feedback_icon.jpg" alt="Feedback Icon" id="vfb-icon">
+            <h3>Scheduled Feedback</h3>
             <form action="#" method="POST">
                 <div class="sblock-content">
                     <p>Do you have access to internet?<span class="required"> *</span></p>
@@ -60,139 +61,6 @@
                             <td class="block-td-left">
                                 <input type="radio" name="access" id="some" value="Sometimes">
                                 <label for="some">Sometimes</label>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="sblock-content">
-                    <p>Subject & Syllabus covered in total<span class="required"> *</span> </p>
-                    <table>
-                        <th></th>
-                        <th class="percent">20-40%</th>
-                        <th class="percent">40-60%</th>
-                        <th class="percent">60-80%</th>
-                        <th class="percent">100%</th>
-                        <tr>
-                            <th class="subjects">CNS (17CS61)</th>
-                            <td class="block-td-center"><input type="radio" name="CNS" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="CNS" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="CNS" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="CNS" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="subjects">CGV (17CS62)</th>
-                            <td class="block-td-center"><input type="radio" name="CGV" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="CGV" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="CGV" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="CGV" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="subjects">SSCD (17CS63)</th>
-                            <td class="block-td-center"><input type="radio" name="SSCD" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="SSCD" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="SSCD" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="SSCD" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="subjects">OS (17CS64)</th>
-                            <td class="block-td-center"><input type="radio" name="OS" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="OS" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="OS" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="OS" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="subjects">DMDW (17CS651)</th>
-                            <td class="block-td-center"><input type="radio" name="DMDW" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="DMDW" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="DMDW" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="DMDW" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="subjects">PAP (17CS664)</th>
-                            <td class="block-td-center"><input type="radio" name="PAP" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="PAP" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="PAP" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="PAP" id="4" value="100%"></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="sblock-content">
-                    <p>Subject Faculty Evalution<span class="required"> *</span></p>
-                    <table>
-                        <th></th>
-                        <th class="percent">OKAY</th>
-                        <th class="percent">GOOD</th>
-                        <th class="percent">VERY GOOD</th>
-                        <th class="percent">EXCELLENT</th>
-                        <tr>
-                            <th class="teachers">CNS (17CS61) - Mr.Chandrashekar</th>
-                            <td class="block-td-center"><input type="radio" name="CNS" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="CNS" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="CNS" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="CNS" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="teachers">CGV (17CS62) - Ms.Rajani</th>
-                            <td class="block-td-center"><input type="radio" name="CGV" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="CGV" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="CGV" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="CGV" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="teachers">SSCD (17CS63) - Mrs.Shazia</th>
-                            <td class="block-td-center"><input type="radio" name="SSCD" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="SSCD" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="SSCD" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="SSCD" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="teachers">OS (17CS64) - Mrs.Shivaranjini</th>
-                            <td class="block-td-center"><input type="radio" name="OS" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="OS" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="OS" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="OS" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="teachers">DMDW (17CS651) - Mrs.Pushpalatha</th>
-                            <td class="block-td-center"><input type="radio" name="DMDW" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="DMDW" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="DMDW" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="DMDW" id="4" value="100%"></td>
-                        </tr>
-                        <tr>
-                        <th class="teachers">PAP (17CS664) - Mrs.Geetha</th>
-                            <td class="block-td-center"><input type="radio" name="PAP" id="1" value="20-40%"></td>
-                            <td class="block-td-center"><input type="radio" name="PAP" id="2" value="40-60%"></td>
-                            <td class="block-td-center"><input type="radio" name="PAP" id="3" value="60-80%"></td>
-                            <td class="block-td-center"><input type="radio" name="PAP" id="4" value="100%"></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="sblock-content">
-                    <p>How much of the topics covered were you able to understand?<span class="required"> *</span></p>
-                    <table>
-                        <tr>
-                            <td class="block-td-left">
-                                <input type="radio" name="understanding" id="1" value="0-25%">
-                                <label for="1">Understood 0-25%</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="block-td-left">
-                                <input type="radio" name="understanding" id="2" value="25-50%">
-                                <label for="2">Understood 25-50%</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="block-td-left">
-                                <input type="radio" name="understanding" id="3" value="50-75%">
-                                <label for="3">Understood 50-75%</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="block-td-left">
-                                <input type="radio" name="understanding" id="4" value="75-100%">
-                                <label for="4">Understood 75-100%</label>
                             </td>
                         </tr>
                     </table>
@@ -347,19 +215,19 @@
                     <table>
                         <tr>
                             <td class="block-td-left">
-                                <input type="radio" name="" id="" value="not much">
+                                <input type="radio" name="online-use" id="" value="not much">
                                 <label for="">Not much</label>
                             </td>
                         </tr>
                         <tr>
                             <td class="block-td-left">
-                                <input type="radio" name="" id="" value="okay">
+                                <input type="radio" name="online-use" id="" value="okay">
                                 <label for="">Okay</label>
                             </td>
                         </tr>
                         <tr>
                             <td class="block-td-left">
-                                <input type="radio" name="" id="" value="helpful">
+                                <input type="radio" name="online-use" id="" value="helpful">
                                 <label for="">Helpful</label>
                             </td>
                         </tr>

@@ -26,7 +26,8 @@
             <form action="../stud-loginsys/includes/student-login.inc.php" method="post" autocomplete="off">
             <div class="feed-subblock">
                 <div>
-                    <h3 id="form-title-feedback">Student Login</h3>
+                    <img src="/Feedback-System/css/img/student_icon.jpg" alt="User Icon" id="login-icon">
+                    <h3>Student Login</h3>
                 </div>
                 <div>
                     <?php
